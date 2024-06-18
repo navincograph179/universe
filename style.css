@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=Zen+Maru+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Maru+Gothic&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+section {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  padding: 15rem 8%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 8%;
+}
+
+.navigation .logo {
+  position: relative;
+  width: 8rem;
+}
+
+.navigation .nav-links {
+  display: flex;
+  position: relative;
+}
+
+.navigation .nav-links li {
+  list-style: none;
+}
+
+.navigation .nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-left: 4rem;
+  font-size: 2rem;
+}
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .textBox {
+  position: relative;
+  max-width: 60rem;
+}
+
+.content .textBox h2 {
+  font-size: 4rem;
+  color: #333;
+  line-height: 1.5em;
+  font-weight: 500;
+}
+.content .textBox h2 span {
+  color: #017143;
+  font-weight: 900;
+  font-size: 1.2em;
+}
+.content .textBox p {
+  font-size: 1.6rem;
+  color: #333;
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 500;
+}
+
+.content .textBox a {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.6rem 2rem;
+  background: #017143;
+  color: #fff;
+  border-radius: 4rem;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+}
+.content .imgBox {
+  width: 60rem;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5rem;
+  margin-top: 5rem;
+}
+.content .imgBox img {
+  max-width: 34rem;
+}
+.thumb {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+}
+.thumb li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 2rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.thumb li:hover {
+  transform: translateY(-17px);
+}
+.thumb li img {
+  max-width: 7rem;
+}
+
+.sci {
+  position: absolute;
+  top: 50%;
+  right: 3rem;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sci li {
+  list-style: none;
+}
+.sci li a {
+  display: inline-block;
+  margin: 0.5rem 0;
+  transform: scale(0.6);
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  right: 3rem;
+  width: 60rem;
+  height: 60rem;
+  transform: translate(20%, -50%);
+}
+
+@media screen and (min-width: 1024px) {
+
+  section {
+    padding: 15rem 15%;
+    margin: 0 auto;
+  }
+  .navigation {
+    padding: 4.5rem 15%;
+  }
+  
+  .content .imgBox {
+    width: 80rem;
+    padding-right: 6rem;
+    margin-top: 6rem;
+  }
+  .content .imgBox img {
+    max-width: 44rem;
+  }
+}
