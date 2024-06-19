@@ -42,19 +42,33 @@ section {
 .navigation .nav-links {
   display: flex;
   position: relative;
+ 
 }
 
 .navigation .nav-links li {
   list-style: none;
+  transition: .5s;
 }
 
+.navigation .nav-links li .active {
+  background-color: #fff;
+  border: 1px solid #333;
+  color: #333;
+  padding: .6rem 1.5rem;
+  border-radius: 1.5rem;
+}
 .navigation .nav-links li a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
   font-size: 2rem;
-  font-weight: 500;
-  margin-left: 4rem;
+  font-weight: 600;
+  margin-left: 3rem;
   font-size: 2rem;
+  font-family: "Zen Maru Gothic";
+  color: #017143;
+}
+.navigation .nav-links li:hover {
+  transform: scale(1.1);
 }
 .content {
   position: relative;
@@ -65,7 +79,7 @@ section {
 }
 .content .textBox {
   position: relative;
-  max-width: 60rem;
+  max-width: 70rem;
 }
 
 .content .textBox h2 {
@@ -106,7 +120,7 @@ section {
   margin-top: 5rem;
 }
 .content .imgBox img {
-  max-width: 34rem;
+  max-width: 44rem;
 }
 .thumb {
   position: absolute;
@@ -158,22 +172,35 @@ section {
   transform: translate(20%, -50%);
 }
 
-@media screen and (min-width: 1024px) {
+/* ==============  Media Query for Big screen   =================== */
 
-  section {
-    padding: 15rem 15%;
-    margin: 0 auto;
-  }
-  .navigation {
-    padding: 4.5rem 15%;
-  }
-  
-  .content .imgBox {
-    width: 80rem;
-    padding-right: 6rem;
-    margin-top: 6rem;
-  }
-  .content .imgBox img {
-    max-width: 44rem;
-  }
+@media only screen and (min-width: 1320px){
+    section {
+      padding: 20rem 20%;
+    }
+    .navigation {
+      padding: 2.5rem 20%;
+    }
+    .thumb {
+      bottom: 10rem;
+    }
+    .thumb li img {
+      max-width: 10rem;
+    }
+    .sci {
+      right: 20rem;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+      .content {
+        margin-top: 5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .content .imgBox img {
+        max-width: 80%;
+      }
+
 }
